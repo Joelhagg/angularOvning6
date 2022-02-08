@@ -1,1 +1,31 @@
-<p>child works!</p>
+<h1>child works!</h1>
+
+<br>
+
+<h2>Skriv i fältet för att se det på sidan!</h2>
+
+<input #firstInput (keyup)="firstInputValue(firstInput.value)">
+
+<p>{{ textFromFirstInput }}</p>
+
+<br>
+
+<hr>
+
+<h2>Testa vad som händer här!</h2>
+
+<input #secondInput (keyup)="secondInputValue($event)">
+
+<p>{{ textFromSecondInput }}</p>
+
+<br>
+
+<hr>
+
+<br>
+
+<h2>Skriv i och tryck på enter för att visa på sidan!</h2>
+
+<input #thirdInput (keyup.enter)="thirdInputValue(thirdInput.value)">
+
+<p>{{ textFromThirdInput }}</p>
